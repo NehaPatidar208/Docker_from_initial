@@ -22,4 +22,50 @@ docker exec -it neha sh             #it for intrective terminal
 
 # here a shell is opened and we can work on it
 
+docker kill neha
+docker rm neha
 
+
+#now see we can execute child while creating parent process
+
+
+docker run -it --name neha1 apline sh  # so here we can execute whose chile processes which are present in image only
+docker rm neha1
+
+#for eg if we try to run 
+docker run -it --name neha2 alpine ipcongig
+# then it will show an error
+#######################error#############################
+###docker: Error response from daemon: OCI runtime create failed: container_linux.go:348:
+###starting container process caused "exec: \"ipconfig\": executable file not found in $PATH": unknown.
+
+#while
+docker run -it --name neha alpine ifconfig
+#it will work
+
+docker rm neha
+
+
+
+############################################################
+#temp container
+docker run --rm alpine date             # here container will remove as the process complete due to --rm
+
+
+docker run --rm alpine ping fb.com
+#as we press ctrl+c then it will remove the container at that instance of time
+
+
+########################################################
+
+docker run -it --rm alpine
+#it will work
+
+docker run -it --rm python
+
+
+#who is parent process
+#so ans is
+docker inspect python
+
+#in cmd "pyhton is written " so python is parent process
