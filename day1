@@ -26,6 +26,7 @@ docker ps -a                     #for showing all running and non running contai
 
 #7. kill    and     stop
 docker kill  abc                 # it will stop the running container
+docker kill  52.204.127.145.4200         #here it is id of container which also can be used
 #or
 docker stop  abc                 # it is similar to kill
 
