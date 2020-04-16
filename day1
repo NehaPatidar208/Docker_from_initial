@@ -1,0 +1,41 @@
+#1. search cmd
+docker search java
+
+
+
+#2. pull cmd
+docker pull python
+
+
+
+#3. images
+docker images
+
+
+#4.  run
+docker run -d python:latest                  #-d for which version
+ #example
+docker run --name abc -d alpine ping fb.com
+
+#5. ps
+docker ps                      # forshowing running container
+
+#6. ps -a
+docker ps -a                     #for showing all running and non running containers
+
+
+#7. kill    and     stop
+docker kill  abc                 # it will stop the running container
+#or
+docker stop  abc                 # it is similar to kill
+
+
+#now check the container runnung or stopped
+docker ps
+
+
+# 8.  rm
+
+docker ps -a             #checking all containers
+docker rm abc            #remove container 
+docker ps -a             # on again checking abc be not be there in containrs list
