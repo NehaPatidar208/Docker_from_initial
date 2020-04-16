@@ -1,0 +1,19 @@
+# practice 
+
+docker pull alpine                                   #pulling alpine image if not present
+
+docker run alpine ifconfig                           # run ifcongif which is in alpine image
+
+docker run alpine date
+
+# kill all containers together
+docker kill $(docker ps -aq)
+
+#remove all the congtainers together
+docker rm $(docker ps -aq)
+
+# correct way to create container
+docker run --name nehac1 -d alpine ping fb.com
+#-d is putting all the running outputs on background which will not show the running output
+
+
