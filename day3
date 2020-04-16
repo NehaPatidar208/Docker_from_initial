@@ -1,0 +1,25 @@
+#parent process is the one which is primarily responsible for life of container
+
+
+docker run -d --name neha alpine  ping fb.com    #ping fb.com will make the container in running state 
+                            
+# so here alpine parent process which is running we can now execute any other child process
+
+docker exec neha date
+#it will work becase alpine is running 
+
+#now child container can be created when parent process is running
+docker exec neha ping goggle.com
+# now it will in running state even if we press ctrl+c
+
+docker exec neha11 cal
+
+#it will work
+
+#now if a container is running then we can login # shell
+
+docker exec -it neha sh             #it for intrective terminal
+
+# here a shell is opened and we can work on it
+
+
