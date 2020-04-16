@@ -4,7 +4,7 @@ docker search java
 
 
 #2. pull cmd
-docker pull python
+docker pull python       # pull download the image 
 
 
 
