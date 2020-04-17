@@ -1,0 +1,5 @@
+#build our own image
+
+docker build -t ngximg:v1 https://github.com/NehaPatidar208/NginxImgEx.git
+
+docker run -d --name neha1 -p 4444:80 ngximg:v1
