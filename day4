@@ -1,2 +1,8 @@
 # build your own image 
-docker build
+docker build -t neha:version1 https://github.com/NehaPatidar208/summer_internship.git
+
+#if file is in your system then
+docker build -t neha:version -f Dockerfile.txt .           # if Dockerfile have not txt extension then no need of -f here
+
+#now run your image
+docker run -it --rm neha:version                # --rm will remove container when it interrupted
