@@ -1,5 +1,7 @@
+docker build -t javacode:v1 https://github.com/NehaPatidar208/javaimg.git
+#building image using github code
 docker build -t javacode:v1 .
-#building image
+#building image using system code
 
 docker run -it --rm javacode:v1  
 #creating a container
