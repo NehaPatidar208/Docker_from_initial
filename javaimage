@@ -1,0 +1,5 @@
+docker build -t javacode:v1 .
+#building image
+
+docker run -it --rm javacode:v1  
+#creating a container
