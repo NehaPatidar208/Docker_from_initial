@@ -1,0 +1,9 @@
+#we are taking flask image
+
+docker tag flask:v1 nehapatidar208/flask:v1
+
+docker login
+
+docker push nehapatidar208/flask:v1
+
+docker logout
