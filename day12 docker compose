@@ -6,7 +6,8 @@
 #    image: alpine          #image
 #    container_name: nehacont1               #creating container for that
 #    command: date  or
-#    port: 80
+#    port:
+#     -"11111:80"
 
 #3#network
 #4#volumes
