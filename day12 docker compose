@@ -1,0 +1,20 @@
+#we need to create a docker-compose.yml file first
+#docker-compose file contain 4 sections
+#1#version: '2.x'#'3.x'
+#2#services:
+#   nehaapp01: 
+#    image: alpine          #image
+#    container_name: nehacont1               #creating container for that
+#    command: date
+
+docker-compose up
+
+docker-compose ps
+docker-compose down
+docker-compose down
+
+
+docker-compose down
+
+# we can execute one service from docker-compose file using following command
+docker-compose up -d nehaapp01
