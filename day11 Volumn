@@ -1,0 +1,27 @@
+# creating volume ###### it is storage 
+docker volume create nehavol1
+
+docker run -it --name mycont1 -v nehavol1:/mydata alpine sh
+##creating container mycont1 in volume and mydata file in container
+/ # cd mydata
+/mydata # mkdir hello guys we are here
+/mydata # date >newdata.txt
+/mydata # cat newdata.txt
+/mydata # ls
+/mydata # exit
+
+docker rm mycont1
+
+docker run -it --name mycont1 -v nehavol1:/mydata alpine sh
+/ # cd mydata
+/mydata # ls
+/mydata # exit
+
+docker rm mycont1
+
+docker run -it --name mycont2 -v nehavol1:/neha java bash
+cd neha
+ls
+exit
+
+docker volume inspect nehavol1
