@@ -2,7 +2,7 @@
 #docker-compose file contain 4 sections
 #1#version: '2.x'#'3.x'
 #2#services:
-#   nehaapp01: 
+#   neha1: 
 #    image: alpine          #image
 #    container_name: nehacont1               #creating container for that
 #    command: date
