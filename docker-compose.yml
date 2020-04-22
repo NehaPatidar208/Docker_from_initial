@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+ nehaapple1:
+  image: alpine
+  container_name: neha1
+  command: date
+ nehaapple2:
+  image: alpine
+  container_name: neha2
+  command: cal
